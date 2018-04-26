@@ -1,0 +1,8 @@
+You need to run your model on 4th April 2018 data and predict the stock price for 30th trading day. 
+So your 0th day will be 4th Apr and you have to predict for 16th May (30th Trading Day).
+
+
+ Return will be % 30th Day Return = ( 𝑪𝒍𝒐𝒔𝒊𝒏𝒈 𝑷𝒓𝒊𝒄𝒆 (30th Day)– 𝑪𝒍𝒐𝒔𝒊𝒏𝒈 𝑷𝒓𝒊𝒄𝒆 (0th Day))𝑪𝒍𝒐𝒔𝒊𝒏𝒈 𝑷𝒓𝒊𝒄𝒆 (0th Day) * 100
+
+ 
+Steps:
