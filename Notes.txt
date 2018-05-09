@@ -1,0 +1,42 @@
+
+
+
+1.Select base model:1_base_model.py
+'''We have data of 12 diffenret stocks,but we will pick only one for exploration'''
+data preporcessing
+'''remove rows and  with any null value'''
+'''Create new column to show closing price after 30th day'''
+Evaluation matrix chosen is Mean Absolute Error/MAE
+'''Try out couple of regression models to choose base model'''
+'''We wil go with  RandomForestRegressor as base model to help with feature engineering'''
+
+2.Feature Engineering:2_feature_engineering.py
+Try diffenret feature using TALib
+Evaluate MAE for each featureSelect features which improves MAE
+3.Select best model:3_select_best_model.py
+Create featured dataset from previous step.
+
+Try different regression model on whole dataset and compare MAE
+It turns out out LinearRegression and BayesianRidge perrform better.
+
+Create Training and test set:
+KFoldCrossvalidation is not useful in timeseries data.
+TimeSeriesSplit is used with 6 fold(6 is decided after trying many otherr values).
+For each fold create 1 model.As we have chosen 2 algorithms.
+We'll have total 12 models.
+'''Now we have 12 predicted values from 12 different models,one way to select final values is averaging output of 12 models
+but a biased model can give outlier as result which in turn will afect averaging.
+So new approach is considered:Treat output of 12 models as features'''
+
+
+4.Run final model on test data:4_run_final_model.py
+Create new model and consider output of 12 models as features.
+Ridge model is considered to give more importance/weight to more correct models from 12 models.
+This model will give final value.
+Run this model on 4th April data,it'll predict 16th May data.
+
+
+
+
+Future work:
+Create model according to sector
