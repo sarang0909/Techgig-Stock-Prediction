@@ -12,7 +12,7 @@ To elaborate, we want to predict for list of given stocks and their return after
 Above stock data has been downloaded from Yahoo Finance, but participants are free to download any other historical data from Yahoo finance if they are interested. File format for stock data
 Following technical indicators should be generated using any open source packages available in R or python for technical Analysis ( like TTR in R or Talib in Python) Simple Moving Average ( 30, 40, 50 Days) Exponential Moving Average ( 30, 40, 50 Days) Aroon Oscillator ( 30, 40, 50 Days) MACD signals Relative Strength Index (RSI) Bollinger Bands ( 30, 40, 50 Days) Stochastic Oscillator Stochastic momentum Indicator Chande Momentum Oscillator Commodity Channel Index ( 30, 40, 50 Days) Chakin Volatility indicator ( 30, 40, 50 Days) Trend Detection Index (30, 40, 50 Days) Rate of Price Change (30, 40, 50 Days) Rate of Volume Change (30, 40, 50 Days) William % R (30, 40, 50 Days) Participants are free to transform and derive more features from the above set of indicators from short term as well as long term perspective.
 
-
+#Approach:
 
 1.Select base model:1_base_model.ipynb
 We have data of 12 diffenret stocks,but we will pick only one for exploration
